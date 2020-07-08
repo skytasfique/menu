@@ -380,6 +380,9 @@ ul.mgmenu-main-nav > li:hover > a {
 
     .mgmenu-mega-menu{
         color: $mega-white !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
         .fa{
             margin-left: 5px;
             padding: 3px;
@@ -423,6 +426,8 @@ ul.mgmenu-main-nav > li:hover > a {
     }
 
     .mgmenu-top {
+        margin-bottom: 20px;
+
         &--has-submenu {
             &.active {
                 .mgmenu-sub-menu-block {

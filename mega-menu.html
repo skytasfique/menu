@@ -37,7 +37,7 @@
                             </a>
                             <div class="mgmenu-sub-menu-block">
                                 <div class="mgmenu-header-back">
-                                    <i onclick="backBtnTreeview()" class="fas fa-chevron-left mgmenu-header-back__icon"></i>
+                                    <i class="fas fa-chevron-left mgmenu-header-back__icon"></i>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-9">
@@ -220,7 +220,7 @@
                             </a>
                             <div class="mgmenu-sub-menu-block">
                                 <div class="mgmenu-header-back">
-                                    <i onclick="backBtnTreeview()" class="fas fa-chevron-left mgmenu-header-back__icon"></i>
+                                    <i class="fas fa-chevron-left mgmenu-header-back__icon"></i>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
@@ -279,7 +279,7 @@
                             </a>
                             <div class="mgmenu-sub-menu-block">
                                 <div class="mgmenu-header-back">
-                                    <i onclick="backBtnTreeview()" class="fas fa-chevron-left mgmenu-header-back__icon"></i>
+                                    <i class="fas fa-chevron-left mgmenu-header-back__icon"></i>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-2 col-md-4">
@@ -461,14 +461,27 @@
         }
     }
     //Click function for Megamenu Back button
+    let megaMenuBackBtn = document.getElementsByClassName('mgmenu-header-back__icon')
+    for (let i = 0; i < megaMenuBackBtn.length; i++) {
+        megaMenuBackBtn[i].addEventListener( 'click', backBtnTreeview, false )
+    }
     function backBtnTreeview() {
-        let backBtn = document.querySelector('.mgmenu-header-back__icon')
-        if (backBtn.parentNode.parentNode.parentNode.classList.contains('active')) {
-            backBtn.parentNode.parentNode.parentNode.classList.remove('active')
+        if (this.parentNode.parentNode.parentNode.classList.contains('active')) {
+            this.parentNode.parentNode.parentNode.classList.remove('active')
             console.log('not /clicked')
         } 
         return
     }
+    // function backBtnTreeview() {
+    //     let backBtn = document.querySelectorAll('.mgmenu-header-back__icon')
+    //     if (backBtn[i].parentNode.parentNode.parentNode.classList.contains('active')) {
+    //         backBtn.parentNode.parentNode.parentNode.classList.remove('active')
+    //         console.log('not /clicked')
+    //     } else {
+    //         backBtn.parentNode.parentNode.parentNode.classList.add('active')
+    //         console.log('clicked')
+    //     }
+    // }
 
     // -------- End Functions for Mega-Menu --------/
 </script>

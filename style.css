@@ -384,6 +384,8 @@ ul.mgmenu-main-nav > li:hover > a {
 @media only screen and (max-width: 991px) {
   .mgmenu-mega-menu {
     color: #fff !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .mgmenu-mega-menu .fa {
     margin-left: 5px;
@@ -428,6 +430,9 @@ ul.mgmenu-main-nav > li:hover > a {
     font-weight: 500;
   }
 
+  .mgmenu-top {
+    margin-bottom: 20px;
+  }
   .mgmenu-top--has-submenu.active .mgmenu-sub-menu-block {
     visibility: visible;
     opacity: 1;
