@@ -71,6 +71,24 @@ $mega-black			: #232323;
         }
     }       
 }
+.mgmenu-overlay {
+    @media screen and (max-width: 991px) {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, 0.2);
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
 .mgmenu-header-close {
     display: none;
 
@@ -93,7 +111,7 @@ $mega-black			: #232323;
         justify-content: flex-end;
         width: 100%;
         position: absolute;
-        top: 10px;
+        top: 15px;
         right: 0;
     }
 
@@ -120,7 +138,7 @@ $mega-black			: #232323;
         justify-content: flex-end;
         width: 100%;
         position: fixed;
-        top: 10px;
+        top: 15px;
         right: 20%;
         z-index: 99;
     }

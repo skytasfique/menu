@@ -19,12 +19,13 @@
     <div class="mgmenu-header mgmenu">
         <div class="mgmenu-nav">
             <div class="mgmenu-header-bar">
-                <i onclick="toggleMenuSm()" class="fa fa-bars mgmenu-header-bar__icon" aria-hidden="true"></i>
+                <i onclick="toggleMegaMenuXs()" class="fa fa-bars mgmenu-header-bar__icon" aria-hidden="true"></i>
             </div>
             <div class="container">
                 <div class="mgmenu-nav-wrapper">
+                    <div onclick="toggleMegaMenuXs()" class="mgmenu-overlay"></div>
                     <div class="mgmenu-header-close">
-                        <i onclick="toggleMenuSm()" class="fas fa-times mgmenu-header-close__icon"></i>
+                        <i onclick="toggleMegaMenuXs()" class="fas fa-times mgmenu-header-close__icon"></i>
                     </div>
                     <ul class="mgmenu-main-nav">
                         <li class="mgmenu-top">
@@ -436,13 +437,21 @@
     /*------------------------------------------
         // Start Functions for Mega-Menu
     ------------------------------------------*/
-    //Click function for MegaMenu
-    function toggleMenuSm() {
+    function toggleMegaMenuXs() {
+        // Toggle Active class for megamenu Wrapper 
         let mainMenuArea = document.querySelector('.mgmenu-nav-wrapper')
         if (mainMenuArea.classList.contains('active')) {
             mainMenuArea.classList.remove('active')
         } else {
             mainMenuArea.classList.add('active')
+        }
+
+        // Toggle Active class for megamenu overlay
+        let megaMenuoverlayArea = document.querySelector('.mgmenu-overlay')
+        if (megaMenuoverlayArea.classList.contains('active')) {
+            megaMenuoverlayArea.classList.remove('active')
+        } else {
+            megaMenuoverlayArea.classList.add('active')
         }
     }
 
@@ -472,17 +481,6 @@
         } 
         return
     }
-    // function backBtnTreeview() {
-    //     let backBtn = document.querySelectorAll('.mgmenu-header-back__icon')
-    //     if (backBtn[i].parentNode.parentNode.parentNode.classList.contains('active')) {
-    //         backBtn.parentNode.parentNode.parentNode.classList.remove('active')
-    //         console.log('not /clicked')
-    //     } else {
-    //         backBtn.parentNode.parentNode.parentNode.classList.add('active')
-    //         console.log('clicked')
-    //     }
-    // }
-
     // -------- End Functions for Mega-Menu --------/
 </script>
 
