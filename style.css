@@ -110,8 +110,9 @@
 .mgmenu__title--clickable:hover {
   background-color: #fff;
   text-decoration: none;
+  color: black;
 }
-.mgmenu__title--clickable:hover {
+.mgmenu__title--clickable h5:hover {
   text-decoration: none;
 }
 .mgmenu__title--brand {
@@ -201,10 +202,6 @@
 
 .mgmenu-header.mgmenu .mgmenu-nav {
   background-color: #e6e6e6;
-}
-
-.mgmenu-header.light nav {
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 ul.mgmenu-main-nav {
@@ -413,7 +410,7 @@ ul.mgmenu-main-nav > li:hover > a {
     -moz-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s;
-    opacity: 0;
+    opacity: 1;
   }
 
   .mgmenu-ic.menu:focus ~ .mgmenu-main-nav > * {
@@ -631,7 +628,7 @@ ul.mgmenu-main-nav > li:hover > a {
   /* Drop Down/Up Arrow for Mega Menu */
   ul.mgmenu-main-nav > li > a.mgmega-menu > span {
     display: block;
-    vertmgmenu-ical-align: middle;
+    vertical-align: middle;
   }
 
   ul.mgmenu-main-nav > li > a.mgmega-menu > span:after {
@@ -644,7 +641,7 @@ ul.mgmenu-main-nav > li:hover > a {
     background-color: transparent;
     display: inline-block;
     margin-left: 10px;
-    vertmgmenu-ical-align: middle;
+    vertical-align: middle;
   }
 
   ul.mgmenu-main-nav > li:hover > a.mgmega-menu span:after {
