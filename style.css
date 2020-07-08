@@ -1,11 +1,3 @@
-blockquote {
-  max-width: 1000px;
-  margin: 0 auto;
-  font-size: 16px;
-  border-left: 0px;
-  padding: 20px;
-}
-
 .mgmenu-header.mgmenu {
   background-color: #e6e6e6;
 }
@@ -308,8 +300,12 @@ ul.mgmenu-main-nav > li:hover > a {
 }
 
 @media only screen and (max-width: 768px) {
-  .sub-menu-head {
-    color: orange;
+  .mgmenu-mega-menu {
+    color: #fff !important;
+  }
+  .mgmenu-mega-menu .fa {
+    margin-left: 5px;
+    padding: 3px;
   }
 
   .mgmenu-ic.menu {
@@ -379,10 +375,6 @@ ul.mgmenu-main-nav > li:hover > a {
   .mgmenu-ic.menu:hover,
 .mgmenu-ic.menu:focus {
     opacity: 1;
-  }
-
-  nav {
-    background-color: transparent;
   }
 
   /* Main Menu for Handheld Devmgmenu-ices  */
@@ -480,8 +472,81 @@ ul.mgmenu-main-nav > li:hover > a {
   }
 }
 @media only screen and (min-width: 769px) {
+  .mgmenu-nav {
+    background: transparent;
+  }
+
   .mgmenu-ic.menu {
     display: none;
+  }
+
+  .mgmenu-ic.menu {
+    display: block;
+  }
+
+  header.mgmenu.mgmenu-ic.menu .mgmenu-line {
+    background-color: #fff;
+  }
+
+  header.light .mgmenu-ic.menu .mgmenu-line {
+    background-color: #000;
+  }
+
+  .mgmenu-ic.menu .mgmenu-line {
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+  }
+
+  .mgmenu-ic.menu:focus .mgmenu-line {
+    background-color: #fff !important;
+  }
+
+  .mgmenu-ic.menu:focus .mgmenu-line:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .mgmenu-ic.menu:focus .mgmenu-line:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: -10px;
+  }
+
+  .mgmenu-ic.menu:focus .mgmenu-line:nth-child(3) {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+
+  .mgmenu-ic.menu:focus {
+    outline: none;
+  }
+
+  .mgmenu-ic.menu:focus ~ .mgmenu-ic.close {
+    opacity: 1;
+    z-index: 21;
+    outline: none;
+  }
+
+  /*
+
+  .mgmenu-ic.menu:focus ~ .mgmenu-ic.close { opacity: 1.0; z-index : 21;  }
+  .mgmenu-ic.close:focus { opacity: 0; }
+  */
+  .mgmenu-ic.menu:hover,
+.mgmenu-ic.menu:focus {
+    opacity: 1;
   }
 
   /* Main Menu for Desktop Devmgmenu-ices  */
