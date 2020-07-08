@@ -1,6 +1,6 @@
 $mega-primary-color	: #e6e6e6;
 $mega-title-color	: #222222;
-$mega-text-color		: #777777;
+$mega-text-color	: #777777;
 $mega-nav-hover      : #a6a6a6;
 
 $mega-white			: #fff;
@@ -13,11 +13,17 @@ blockquote {
     border-left: 0px;
     padding: 20px;
 }
-header.mgmenu {
+.mgmenu-header.mgmenu {
     background-color:$mega-primary-color;
 }
 .mgmenu-nav {
     position: relative;
+}
+.mgmenu-mega-menu{
+    .fa{
+        margin-left: 5px;
+        padding: 3px;
+    }
 }
 .mgmenu {
     &__category{
@@ -79,9 +85,6 @@ header.mgmenu {
             word-wrap: break-word;
             &:hover {
                 background-color: lighten($color: $mega-white, $amount: 10%);
-                text-decoration: none;
-            }
-            &:hover {
                 text-decoration: none;
             }
         }
@@ -202,10 +205,10 @@ header.mgmenu {
 .mgmenu-nav {
     position: relative;
 }
-header.mgmenu .mgmenu-nav {
+.mgmenu-header.mgmenu .mgmenu-nav {
     background-color: $mega-primary-color;
 }
-header.light nav {
+.mgmenu-header.light nav {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -265,7 +268,7 @@ ul.mgmenu-main-nav > li:hover > a {
     opacity: 0;
     font-size: 0px;
     font-weight: 300;
-    color: #fff;
+    color: $mega-black;
     top: 8px;
     height: 40px;
     display: block;
@@ -303,10 +306,10 @@ ul.mgmenu-main-nav > li:hover > a {
     .mgmenu-ic.menu {
         display: block;
     }
-    header.mgmenu .mgmenu-ic.menu .mgmenu-line {
-        background-color: #fff;
+    .mgmenu-header.mgmenu .mgmenu-ic.menu .mgmenu-line {
+        background-color: $mega-black;
     }
-    header.light .mgmenu-ic.menu .mgmenu-line {
+    .mgmenu-header.light .mgmenu-ic.menu .mgmenu-line {
         background-color: #000;
     }
     .mgmenu-ic.menu .mgmenu-line {
@@ -530,10 +533,10 @@ ul.mgmenu-main-nav > li:hover > a {
     }
 
     /* List Separator: Outer Border */
-    // header.mgmenu ul.mgmenu-main-nav > li > a {
+    // .mgmenu-header.mgmenu ul.mgmenu-main-nav > li > a {
     //     border-right: 1px solid #bbb;
     // }
-    // header.light ul.mgmenu-main-nav > li > a {
+    // .mgmenu-header.light ul.mgmenu-main-nav > li > a {
     //     border-right: 1px solid #666;
     // }
 
@@ -547,10 +550,10 @@ ul.mgmenu-main-nav > li:hover > a {
     //     top: 0px;
     //     z-index: 2;
     // }
-    header.mgmenu ul.mgmenu-main-nav > li > a:after {
+    .mgmenu-header.mgmenu ul.mgmenu-main-nav > li > a:after {
         background-color: #777;
     }
-    header.light ul.mgmenu-main-nav > li > a:after {
+    .mgmenu-header.light ul.mgmenu-main-nav > li > a:after {
         background-color: #999;
     }
 

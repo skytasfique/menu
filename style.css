@@ -6,12 +6,17 @@ blockquote {
   padding: 20px;
 }
 
-header.mgmenu {
+.mgmenu-header.mgmenu {
   background-color: #e6e6e6;
 }
 
 .mgmenu-nav {
   position: relative;
+}
+
+.mgmenu-mega-menu .fa {
+  margin-left: 5px;
+  padding: 3px;
 }
 
 .mgmenu__category {
@@ -83,9 +88,6 @@ header.mgmenu {
 }
 .mgmenu__nav-item a:hover {
   background-color: white;
-  text-decoration: none;
-}
-.mgmenu__nav-item a:hover {
   text-decoration: none;
 }
 .mgmenu__nav {
@@ -205,11 +207,11 @@ header.mgmenu {
   position: relative;
 }
 
-header.mgmenu .mgmenu-nav {
+.mgmenu-header.mgmenu .mgmenu-nav {
   background-color: #e6e6e6;
 }
 
-header.light nav {
+.mgmenu-header.light nav {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -272,7 +274,7 @@ ul.mgmenu-main-nav > li:hover > a {
   opacity: 0;
   font-size: 0px;
   font-weight: 300;
-  color: #fff;
+  color: #232323;
   top: 8px;
   height: 40px;
   display: block;
@@ -314,11 +316,11 @@ ul.mgmenu-main-nav > li:hover > a {
     display: block;
   }
 
-  header.mgmenu .mgmenu-ic.menu .mgmenu-line {
-    background-color: #fff;
+  .mgmenu-header.mgmenu .mgmenu-ic.menu .mgmenu-line {
+    background-color: #232323;
   }
 
-  header.light .mgmenu-ic.menu .mgmenu-line {
+  .mgmenu-header.light .mgmenu-ic.menu .mgmenu-line {
     background-color: #000;
   }
 
@@ -553,11 +555,11 @@ ul.mgmenu-main-nav > li:hover > a {
 
   /* List Separator: Outer Border */
   /* List Separator: Inner Border */
-  header.mgmenu ul.mgmenu-main-nav > li > a:after {
+  .mgmenu-header.mgmenu ul.mgmenu-main-nav > li > a:after {
     background-color: #777;
   }
 
-  header.light ul.mgmenu-main-nav > li > a:after {
+  .mgmenu-header.light ul.mgmenu-main-nav > li > a:after {
     background-color: #999;
   }
 
