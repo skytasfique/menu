@@ -33,16 +33,6 @@
 }
 
 @media screen and (max-width: 991px) {
-  .mgmenu-nav-wrapper.active {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 420px) {
-  .mgmenu-nav-wrapper.active {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 991px) {
   .mgmenu-nav-wrapper {
     z-index: 99;
     padding: 15px 0;
@@ -61,6 +51,16 @@
     -moz-transition-duration: 0.6s;
     -o-transition-duration: 0.6s;
     transition-duration: 0.6s;
+  }
+}
+@media screen and (max-width: 991px) {
+  .mgmenu-nav-wrapper.active {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .mgmenu-nav-wrapper.active {
+    width: 90%;
   }
 }
 
@@ -96,9 +96,42 @@
   }
 }
 
+.mgmenu-header-back {
+  display: none;
+}
+.mgmenu-header-back__icon {
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+  color: #fff;
+  margin: 0 15px 15px 25px;
+  border: 2px solid #fff;
+  width: 30px;
+  height: 30px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 991px) {
+  .mgmenu-header-back {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    top: 10px;
+    right: 20%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .mgmenu-header-back {
+    right: 10%;
+  }
+}
+
 .mgmenu-top {
   cursor: pointer;
 }
+
 .mgmenu__category {
   width: 100%;
   margin: 0 auto;
@@ -331,7 +364,8 @@ ul.mgmenu-main-nav > li > a {
 ul.mgmenu-main-nav > li > a:hover {
   background: #a6a6a6;
   display: block;
-  z-index: 9999;
+  z-index: 99;
+  text-decoration: none !important;
 }
 
 ul.mgmenu-main-nav > li:hover {
@@ -345,11 +379,6 @@ ul.mgmenu-main-nav > li:hover > a {
 
 .sub-menu-head {
   margin: 10px 0;
-}
-
-.banners-area {
-  margin-top: 20px;
-  padding-top: 15px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -399,20 +428,23 @@ ul.mgmenu-main-nav > li:hover > a {
     font-weight: 500;
   }
 
-  .mgmenu-sub-menu-block {
-    padding: 0 30px;
+  .mgmenu-top--has-submenu.active .mgmenu-sub-menu-block {
+    visibility: visible;
+    opacity: 1;
   }
-
-  .banners-area {
-    padding-bottom: 0px;
-  }
-
-  .banners-area div {
-    margin-bottom: 15px;
-  }
-
-  .banners-area {
-    border-top: 1px solid #444;
+  .mgmenu-top--has-submenu .mgmenu-sub-menu-block {
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: #232323;
+    margin: 0 0;
+    padding: 40px 30px;
+    overflow-y: auto;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -509,10 +541,6 @@ ul.mgmenu-main-nav > li:hover > a {
     border-right: 5px solid transparent;
     border-top: 0px solid transparent;
     border-bottom: 5px solid #666;
-  }
-
-  .banners-area {
-    border-top: 1px solid #ccc;
   }
 }
 

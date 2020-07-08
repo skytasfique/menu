@@ -28,12 +28,17 @@
                     </div>
                     <ul class="mgmenu-main-nav">
                         <li class="mgmenu-top">
-                            <a class="mgmenu-mega-menu">Home</a>
+                            <a href="#" class="mgmenu-mega-menu">Home</a>
                         </li>
-        
-                        <li class="mgmenu-top">
-                            <a class="mgmenu-mega-menu">Category<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <li class="mgmenu-top mgmenu-top--has-submenu">
+                            <a href="javascript:void(0);" class="mgmenu-mega-menu">
+                                Category
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </a>
                             <div class="mgmenu-sub-menu-block">
+                                <div class="mgmenu-header-back">
+                                    <i onclick="backBtnTreeview()" class="fas fa-chevron-left mgmenu-header-back__icon"></i>
+                                </div>
                                 <div class="row">
                                     <div class="col-lg-9">
                                         <div class="mgmenu__category">
@@ -55,9 +60,7 @@
                                                     <li class="mgmenu__nav-item">
                                                         <a href="#">Drug & Pharmacy</a>
                                                     </li>
-        
                                                 </ul>
-        
                                             </div>
                                             <div class="mgmenu__single-item mgmenu__single-item--has-child">
                                                 <h5 class="mgmenu__title">BRAID SHEEN SPRAY
@@ -82,8 +85,7 @@
                                             </div>
                                             <div class="mgmenu__single-item">
                                                 <a href="#">
-                                                    <h5 class="mgmenu__title mgmenu__title--clickable">
-                                                        Information</h5>
+                                                    <h5 class="mgmenu__title mgmenu__title--clickable">Information</h5>
                                                 </a>
                                             </div>
                                             <div class="mgmenu__single-item mgmenu__single-item--has-child">
@@ -119,8 +121,7 @@
                                                     <h5 class="mgmenu__title mgmenu__title--clickable">
                                                         collection</h5>
                                                 </a>
-                                            </div>
-        
+                                            </div>       
                                             <div class="mgmenu__single-item mgmenu__single-item--has-child">
                                                 <h5 class="mgmenu__title perpel">Another pages</h5>
                                                 <ul class="mgmenu__nav">
@@ -153,9 +154,6 @@
                                                     </li>
                                                 </ul>
                                             </div>
-        
-        
-        
                                             <div class="mgmenu__single-item">
                                                 <a href="#">
                                                     <h5 class="mgmenu__title mgmenu__title--clickable">
@@ -213,209 +211,220 @@
                             </div>
                         </li>
                         <li class="mgmenu-top">
-                            <a>Services</a>
+                            <a href="#" class="mgmenu-mega-menu">Services</a>
                         </li>
-                        <li class="mgmenu-top">
-                            <a class="mgmenu-mega-menu">Brands<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <li class="mgmenu-top mgmenu-top--has-submenu">
+                            <a href="javascript:void(0);" class="mgmenu-mega-menu">
+                                Brands
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </a>
                             <div class="mgmenu-sub-menu-block">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-12">
-                                                <h5 class="mgmenu__title">
-                                                    Brands
-                                                </h5>
-                                                <ul class="mgmenu__nav br">
-                                                    <li class="mgmenu__nav-item">
-                                                        <a href="#">Tee Store</a>
-                                                    </li>
-                                                    <li class="mgmenu__nav-item">
-                                                        <a href="#">Westyle Fashion</a>
-                                                    </li>
-                                                    <li class="mgmenu__nav-item">
-                                                        <a href="#">Ellyana Fashion</a>
-                                                    </li>
-                                                    <li class="mgmenu__nav-item">
-                                                        <a href="#">Violeta Fashion</a>
-                                                    </li>
-                                                    <li class="mgmenu__nav-item">
-                                                        <a href="#">Drug & Pharmacy</a>
-                                                    </li>
-                                                    <li class="mgmenu__nav-item">
-                                                        <a href="#">ABig supermarket</a>
-                                                    </li>
-                                                    <li class="mgmenu__nav-item">
-                                                        <a href="#">Grocery & Goumet</a>
-                                                    </li>
-                                                    <li class="mgmenu__nav-item">
-                                                        <a href="#">Sport & Travel</a>
-                                                    </li>
-                                                </ul>
+                                <div class="mgmenu-header-back">
+                                    <i onclick="backBtnTreeview()" class="fas fa-chevron-left mgmenu-header-back__icon"></i>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <h5 class="mgmenu__title">
+                                            Brands
+                                        </h5>
+                                        <ul class="mgmenu__nav br">
+                                            <li class="mgmenu__nav-item">
+                                                <a href="#">Tee Store</a>
+                                            </li>
+                                            <li class="mgmenu__nav-item">
+                                                <a href="#">Westyle Fashion</a>
+                                            </li>
+                                            <li class="mgmenu__nav-item">
+                                                <a href="#">Ellyana Fashion</a>
+                                            </li>
+                                            <li class="mgmenu__nav-item">
+                                                <a href="#">Violeta Fashion</a>
+                                            </li>
+                                            <li class="mgmenu__nav-item">
+                                                <a href="#">Drug & Pharmacy</a>
+                                            </li>
+                                            <li class="mgmenu__nav-item">
+                                                <a href="#">ABig supermarket</a>
+                                            </li>
+                                            <li class="mgmenu__nav-item">
+                                                <a href="#">Grocery & Goumet</a>
+                                            </li>
+                                            <li class="mgmenu__nav-item">
+                                                <a href="#">Sport & Travel</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="brand-large-img">
+                                            <div class="img">
+                                                <div class="brand-image image"
+                                                    style="background-image: url(images/men.jpg); height: 250px;">
+
+                                                </div>
+                                                <div class="middle">
+                                                    <button class="btn btn-primary">
+                                                        All Brands
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <div class="col-lg-6 col-md-12">
-                                                <div class="brand-large-img">
-                                                    <div class="img">
-                                                        <div class="brand-image image"
-                                                            style="background-image: url(images/men.jpg); height: 250px;">
-        
-                                                        </div>
-                                                        <div class="middle">
-                                                            <button class="btn btn-primary">
-                                                                All Brands
-                                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mgmenu-top mgmenu-top--has-submenu">
+                            <a href="javascript:void(0);" class="mgmenu-mega-menu">
+                                Brands
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="mgmenu-sub-menu-block">
+                                <div class="mgmenu-header-back">
+                                    <i onclick="backBtnTreeview()" class="fas fa-chevron-left mgmenu-header-back__icon"></i>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4">
+                                        <div class="mgmenu__single-item">
+                                            <img src="images/3.png" class="mgmenu-brand-img" alt="">
+                                            <img src="images/one1.jpeg" class="mgmenu-big-img" alt="">
+                                            <ul class="mgmenu__nav">
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Tee Store</a>
+                                                </li>
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Westyle Fashion</a>
+                                                </li>
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Ellyana Fashion</a>
+                                                </li>
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Violeta Fashion</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4">
+                                        <div class="mgmenu__single-item">
+                                            <img src="images/2.png" class="mgmenu-brand-img" alt="">
+                                            <img src="images/two2.jpeg" class="mgmenu-big-img" alt="">
+                                            <ul class="mgmenu__nav">
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Tee Store</a>
+                                                </li>
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Westyle Fashion</a>
+                                                </li>
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Ellyana Fashion</a>
+                                                </li>
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Violeta Fashion</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4">
+                                        <div class=" mgmenu__single-item">
+                                            <img src="images/3.png" class="mgmenu-brand-img" alt="">
+                                            <img src="images/three3.jpeg" class="mgmenu-big-img" alt="">
+                                            <ul class="mgmenu__nav">
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Tee Store</a>
+                                                </li>
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Westyle Fashion</a>
+                                                </li>
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Ellyana Fashion</a>
+                                                </li>
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Violeta Fashion</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 ">
+                                        <div class="mgmenu__single-item">
+                                            <img src="images/4.png" class="mgmenu-brand-img" alt="">
+                                            <img src="images/four4.jpeg" class="mgmenu-big-img" alt="">
+                                            <ul class="mgmenu__nav">
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Tee Store</a>
+                                                </li>
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Westyle Fashion</a>
+                                                </li>
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Ellyana Fashion</a>
+                                                </li>
+                                                <li class="mgmenu__nav-item">
+                                                    <a href="#">Violeta Fashion</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12 ">
+                                        <div class="mgmenu__single-item border-brand">
+                                            <div class="row">
+                                                <div class="col-md-12 ">
+                                                    <div class="mgmenu__single-item">
+                                                        <h5 class="mgmenu__title">
+                                                            Brands
+                                                        </h5>
+                                                        <ul class="mgmenu__nav br">
+                                                            <li class="mgmenu__nav-item">
+                                                                <a href="#">Tee Store</a>
+                                                            </li>
+                                                            <li class="mgmenu__nav-item">
+                                                                <a href="#">Westyle Fashion</a>
+                                                            </li>
+                                                            <li class="mgmenu__nav-item">
+                                                                <a href="#">Ellyana Fashion</a>
+                                                            </li>
+                                                            <li class="mgmenu__nav-item">
+                                                                <a href="#">Violeta Fashion</a>
+                                                            </li>
+                                                            <li class="mgmenu__nav-item">
+                                                                <a href="#">Drug & Pharmacy</a>
+                                                            </li>
+                                                            <li class="mgmenu__nav-item">
+                                                                <a href="#">ABig supermarket</a>
+                                                            </li>
+                                                            <li class="mgmenu__nav-item">
+                                                                <a href="#">Grocery & Goumet</a>
+                                                            </li>
+                                                            <li class="mgmenu__nav-item">
+                                                                <a href="#">Sport & Travel</a>
+                                                            </li>
+                                                        </ul>
+    
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="brand-large-img">
+                                                        <div class="img">
+                                                            <div class="brand-image image"
+                                                                style="background-image: url(images/men.jpg);">
+    
+                                                            </div>
+                                                            <div class="middle">
+                                                                <button class="btn btn-primary">
+                                                                    All Brands
+                                                                </button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                             </div>
                         </li>
                         <li class="mgmenu-top">
-                            <a class="mgmenu-mega-menu">Brands<i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                            <div class="mgmenu-sub-menu-block">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-2 col-md-4">
-                                                <div class="mgmenu__single-item">
-                                                    <img src="images/3.png" class="mgmenu-brand-img" alt="">
-                                                    <img src="images/one1.jpeg" class="mgmenu-big-img" alt="">
-                                                    <ul class="mgmenu__nav">
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Tee Store</a>
-                                                        </li>
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Westyle Fashion</a>
-                                                        </li>
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Ellyana Fashion</a>
-                                                        </li>
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Violeta Fashion</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 col-md-4">
-                                                <div class="mgmenu__single-item">
-                                                    <img src="images/2.png" class="mgmenu-brand-img" alt="">
-                                                    <img src="images/two2.jpeg" class="mgmenu-big-img" alt="">
-                                                    <ul class="mgmenu__nav">
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Tee Store</a>
-                                                        </li>
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Westyle Fashion</a>
-                                                        </li>
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Ellyana Fashion</a>
-                                                        </li>
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Violeta Fashion</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 col-md-4">
-                                                <div class=" mgmenu__single-item">
-                                                    <img src="images/3.png" class="mgmenu-brand-img" alt="">
-                                                    <img src="images/three3.jpeg" class="mgmenu-big-img" alt="">
-                                                    <ul class="mgmenu__nav">
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Tee Store</a>
-                                                        </li>
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Westyle Fashion</a>
-                                                        </li>
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Ellyana Fashion</a>
-                                                        </li>
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Violeta Fashion</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 col-md-4 ">
-                                                <div class="mgmenu__single-item">
-                                                    <img src="images/4.png" class="mgmenu-brand-img" alt="">
-                                                    <img src="images/four4.jpeg" class="mgmenu-big-img" alt="">
-                                                    <ul class="mgmenu__nav">
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Tee Store</a>
-                                                        </li>
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Westyle Fashion</a>
-                                                        </li>
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Ellyana Fashion</a>
-                                                        </li>
-                                                        <li class="mgmenu__nav-item">
-                                                            <a href="#">Violeta Fashion</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-12 ">
-                                                <div class="mgmenu__single-item border-brand">
-                                                    <div class="row">
-                                                        <div class="col-md-12 ">
-                                                            <div class="mgmenu__single-item">
-                                                                <h5 class="mgmenu__title">
-                                                                    Brands
-                                                                </h5>
-                                                                <ul class="mgmenu__nav br">
-                                                                    <li class="mgmenu__nav-item">
-                                                                        <a href="#">Tee Store</a>
-                                                                    </li>
-                                                                    <li class="mgmenu__nav-item">
-                                                                        <a href="#">Westyle Fashion</a>
-                                                                    </li>
-                                                                    <li class="mgmenu__nav-item">
-                                                                        <a href="#">Ellyana Fashion</a>
-                                                                    </li>
-                                                                    <li class="mgmenu__nav-item">
-                                                                        <a href="#">Violeta Fashion</a>
-                                                                    </li>
-                                                                    <li class="mgmenu__nav-item">
-                                                                        <a href="#">Drug & Pharmacy</a>
-                                                                    </li>
-                                                                    <li class="mgmenu__nav-item">
-                                                                        <a href="#">ABig supermarket</a>
-                                                                    </li>
-                                                                    <li class="mgmenu__nav-item">
-                                                                        <a href="#">Grocery & Goumet</a>
-                                                                    </li>
-                                                                    <li class="mgmenu__nav-item">
-                                                                        <a href="#">Sport & Travel</a>
-                                                                    </li>
-                                                                </ul>
-            
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <div class="brand-large-img">
-                                                                <div class="img">
-                                                                    <div class="brand-image image"
-                                                                        style="background-image: url(images/men.jpg);">
-            
-                                                                    </div>
-                                                                    <div class="middle">
-                                                                        <button class="btn btn-primary">
-                                                                            All Brands
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
+                            <a href="#" class="mgmenu-mega-menu">Contact</a>
                         </li>
                         <li class="mgmenu-top">
-                            <a>Contact</a>
+                            <a href="#" class="mgmenu-mega-menu">Checkout</a>
                         </li>
                     </ul>
                 </div>
@@ -424,6 +433,10 @@
     </div>
 </body>
 <script>
+    /*------------------------------------------
+        // Start Functions for Mega-Menu
+    ------------------------------------------*/
+    //Click function for MegaMenu
     function toggleMenuSm() {
         let mainMenuArea = document.querySelector('.mgmenu-nav-wrapper')
         if (mainMenuArea.classList.contains('active')) {
@@ -432,6 +445,32 @@
             mainMenuArea.classList.add('active')
         }
     }
+
+    //Click function for Open Submenu of MegaMenu
+    let treeviewItem = document.getElementsByClassName('mgmenu-top--has-submenu')
+    for (let i = 0; i < treeviewItem.length; i++) {
+        treeviewItem[i].querySelector('.mgmenu-mega-menu').addEventListener( 'click', toggleTreeview, false )
+    }
+    function toggleTreeview() {
+        if (this.parentNode.classList.contains('active')) {
+            this.parentNode.classList.remove('active')
+            console.log('not /clicked')
+        } else {
+            this.parentNode.classList.add('active')
+            console.log('clicked')
+        }
+    }
+    //Click function for Megamenu Back button
+    function backBtnTreeview() {
+        let backBtn = document.querySelector('.mgmenu-header-back__icon')
+        if (backBtn.parentNode.parentNode.parentNode.classList.contains('active')) {
+            backBtn.parentNode.parentNode.parentNode.classList.remove('active')
+            console.log('not /clicked')
+        } 
+        return
+    }
+
+    // -------- End Functions for Mega-Menu --------/
 </script>
 
 <script src="vendor/js/bootstrap.min.js"></script>
