@@ -43,27 +43,31 @@ $mega-black			: #232323;
         z-index: 99;
         padding: 15px 0;
         position: fixed;
-        left: 0px;
+        left: -100%;
         top: 0px;
-        width: 0px;
+        width: 80%;
         background-color: #232323;
         height: 100%;
-        /*CSS animation applied : Slide from left*/
-        -webkit-transition-property: background, width;
-        -moz-transition-property: background, width;
-        -o-transition-property: background, width;
-        transition-property: background, width;
+        -webkit-transition-property: background, width, left;
+        -moz-transition-property: background, width, left;
+        -o-transition-property: background, width, left;
+        transition-property: background, width, left;
         -webkit-transition-duration: 0.6s;
         -moz-transition-duration: 0.6s;
         -o-transition-duration: 0.6s;
         transition-duration: 0.6s;
     }   
+    @media screen and (max-width: 420px) {    
+        width: 90%;
+    }
     &.active {
         @media screen and (max-width: 991px) {
             width: 80%;
+            left: 0;
         }
-        @media screen and (max-width: 420px) {
+        @media screen and (max-width: 420px) {    
             width: 90%;
+            left: 0;
         }
     }       
 }
@@ -88,12 +92,9 @@ $mega-black			: #232323;
         align-items: center;
         justify-content: flex-end;
         width: 100%;
-        position: fixed;
+        position: absolute;
         top: 10px;
-        right: 20%;
-    }
-    @media screen and (max-width: 420px) {    
-        right: 10%;
+        right: 0;
     }
 
 }
@@ -121,6 +122,7 @@ $mega-black			: #232323;
         position: fixed;
         top: 10px;
         right: 20%;
+        z-index: 99;
     }
     @media screen and (max-width: 420px) {    
         right: 10%;
@@ -382,7 +384,7 @@ ul.mgmenu-main-nav > li:hover > a {
         color: $mega-white !important;
         padding-top: 10px;
         padding-bottom: 10px;
-        
+
         .fa{
             margin-left: 5px;
             padding: 3px;
