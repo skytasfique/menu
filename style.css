@@ -24,7 +24,7 @@
 }
 @media screen and (max-width: 991px) {
   .mgmenu-header-bar {
-    display: block;
+    display: inline-block;
   }
 }
 .mgmenu-header-bar__icon {
@@ -406,12 +406,12 @@ ul.mgmenu-main-nav {
   font-size: 0px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 40px;
   height: 100%;
 }
 @media screen and (max-width: 991px) {
   ul.mgmenu-main-nav {
     overflow: auto;
+    margin-top: 40px;
   }
 }
 
