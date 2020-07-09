@@ -11,6 +11,10 @@
   padding: 3px;
 }
 
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+
 .mgmenu-header-bar {
   display: none;
 }
@@ -185,11 +189,19 @@
   overflow: hidden;
   break-inside: avoid;
 }
+@media only screen and (max-width: 991px) {
+  .mgmenu__single-item.border-brand {
+    margin-top: 15px;
+    border-top: 1px solid #a6a6a6;
+    padding-top: 25px;
+  }
+}
 .mgmenu__single-item--has-child {
   margin: 0 0 20px;
 }
 .mgmenu__single-item a {
   text-decoration: none !important;
+  display: block;
 }
 .mgmenu__nav-item {
   word-wrap: break-word;
@@ -236,6 +248,7 @@
   line-height: 1.5;
   margin-bottom: 8px;
   word-wrap: break-word;
+  margin-top: 0;
 }
 .mgmenu__title--clickable {
   position: relative;
@@ -269,6 +282,18 @@
   width: 10px;
   height: 10px;
   background-color: #fff;
+}
+.mgmenu .brand-large-img {
+  margin-left: 15px;
+}
+.mgmenu .brand-large-img.padding-left-0 {
+  margin-left: 0;
+}
+@media only screen and (max-width: 991px) {
+  .mgmenu .brand-large-img {
+    margin-left: 0;
+    margin-top: 15px;
+  }
 }
 .mgmenu .brand-large-img .brand-image {
   width: 100%;
@@ -306,36 +331,52 @@
   opacity: 1;
 }
 
-.mgmenu-brand-img {
-  max-width: 90px;
-  padding-bottom: 10px;
+.mgmenu-brand-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
-@media screen and (max-width: 1024px) {
-  .mgmenu-brand-img {
-    max-width: 80px;
+@media screen and (max-width: 991px) {
+  .mgmenu-brand-images {
+    margin-top: 20px;
   }
 }
-@media screen and (max-width: 767px) {
-  .mgmenu-brand-img {
-    max-width: 60px;
+.mgmenu-brand-images__logo {
+  width: 100%;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 575px) {
+  .mgmenu-brand-images__logo {
+    width: 80%;
+    height: 55px;
   }
 }
-
-.mgmenu-big-img {
+.mgmenu-brand-images__banner {
+  width: 100%;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #e3e8ec;
   margin-top: 10px;
-  border-top: 1px solid #e3e8ec;
-  padding: 20px 0px;
-  max-width: 150px;
-}
-@media screen and (max-width: 1024px) {
-  .mgmenu-big-img {
-    max-width: 120px;
-  }
 }
 @media screen and (max-width: 767px) {
-  .mgmenu-big-img {
-    max-width: 100px;
+  .mgmenu-brand-images__banner {
+    height: 80px;
   }
+}
+.mgmenu-brand-images__divider {
+  padding-top: 5px;
+  margin-top: 5px;
+  border-top: 1px solid #e3e8ec;
+  width: 100%;
 }
 
 /* Navigation Styles */
